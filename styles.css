@@ -1,0 +1,362 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+    letter-spacing: 0px;
+    line-height: 1.25;
+    font-weight: 400;
+    text-decoration: none;
+    text-rendering: optimizeLegibility;
+    border: none
+}
+
+:root {
+    --black: #1f1f1f;
+    --darkGrey: #333333;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    width: 63%;
+}
+
+    header {
+        height: 5%;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+        .headerLeft {
+            height: 100%;
+            width: 40%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+            .logo {
+                height: 23px;
+                width: auto;
+                padding-bottom: 2px;
+            }
+
+            .headerLeft > p {
+                font-size: 13px;
+                color: var(--darkGrey);
+                font-weight: lighter;
+            }
+
+        .headerRight {
+            height: 100%;
+            width: 20%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+            .headerRight > p {
+                font-size: 13px;
+                color: var(--darkGrey);
+                font-weight: lighter;
+            }
+
+            .signIn {
+                height: 100%;
+                width: 25%;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+            }
+
+                .signIn > p {
+                    font-size: 13px;
+                    color: var(--darkGrey);
+                    font-weight: lighter;
+                }
+
+                .signIn > i {
+                    padding: 6px;
+                    border: solid 2px var(--darkGrey);
+                    border-radius: 50%;
+                }
+
+    .mainbody {
+        height: 95%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+        .slideshow {
+            height: 48%;
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-end;
+            align-items: center;
+            background-image: url(./imgs/RWPjnf.webp);
+        }
+
+            .mainIntro {
+                height: 32%;
+                width: 35%;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: flex-start;
+                margin-right: 90px;
+            }
+
+                .introHeader {
+                    height: 30%;
+                    width: 100%;
+                }
+
+                .introParagraph {
+                    height: 40%;
+                    width: 100%;
+                }
+
+                .introButtons {
+                    height: 30%;
+                    width: 100%;
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    align-items: center;
+                    padding-right: 140px;
+                }
+
+                    .introHeader > h1 {
+                        color: var(--black);
+                        font-size: 34px;
+                        font-weight: 600;
+                    }
+                    .introParagraph > p {
+                        color: var(--black);
+                        font-size: 15px;
+                    }
+                    .leftButton > button {
+                        color: white;
+                        font-size: 15px;
+                        font-weight: bold;
+                        background-color: var(--black);
+                        height: 40px;
+                        width: 200px;
+                        padding: 10px;
+                    }
+                    .rightButton > button {
+                        color: var(--black);
+                        font-size: 16px;
+                        font-weight: bold;
+                    }
+
+        .middleIcons {
+            height: 18%;
+            width: 65%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+            .middleIcon {
+                height: 50%;
+                width: 15%;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-evenly;
+                align-items: center;
+                text-align: center;
+            }
+
+            .middleIcon > p {
+                font-weight: bold;
+                font-weight: 14px;
+            }
+
+        .lowerBoxes {
+            height: 34%;
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: flex-start;
+        }
+
+            .lowerBox1 {
+                height: 90%;
+                width: 23%;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: flex-start;
+            }
+
+                .boxDesc1 {
+                    height: 20%;
+                    width: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    align-items: flex-start;
+                }
+
+                .newButton {
+                    height: 27px;
+                    width: 60px;
+                    background-color: gold;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+
+                .newButton > p {
+                    font-size: 14px;
+                }
+
+                .boxDesc1 > h4 {
+                    font-size: 20px;
+                    font-weight: bold;
+                }
+                .boxDesc2 > h4 {
+                    font-size: 20px;
+                    font-weight: bold;
+                }
+                .boxDesc3 > h4 {
+                    font-size: 20px;
+                    font-weight: bold;
+                }
+                .boxDesc4 > h4 {
+                    font-size: 20px;
+                    font-weight: bold;
+                }
+                .boxDesc1 > p {
+                    font-size: 15px;
+                }
+                .boxDesc2 > p {
+                    font-size: 15px;
+                }
+                .boxDesc3 > p {
+                    font-size: 15px;
+                }
+                .boxDesc4 > p {
+                    font-size: 15px;
+                }
+                .buttonLink > p {
+                    font-size: 16px;
+                    color: #1079e3;
+                }
+
+                .buttonLink3 {
+                    width: 100%;
+                    display: flex;
+                    flex-direction: row;
+                    align-items: flex-start;
+                }
+
+                .buttonLink3Left {
+                    margin-right: 25px;
+                }
+
+                .buttonLink3Left > p {
+                    font-size: 16px;
+                    color: #1079e3;
+                }
+                .buttonLink3Right > p {
+                    font-size: 16px;
+                    color: #1079e3;
+                }
+
+                .buttonLink4Upper > p {
+                    font-size: 16px;
+                    color: #1079e3;
+                }
+                .buttonLink4Lower > p {
+                    font-size: 16px;
+                    color: #1079e3;
+                }
+
+            .lowerBox2 {
+                height: 90%;
+                width: 23%;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: flex-start;
+            }
+
+                .boxDesc2 {
+                    height: 20%;
+                    width: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    align-items: flex-start;
+                }
+
+            .lowerBox3 {
+                height: 90%;
+                width: 23%;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: flex-start;
+            }
+
+                .boxDesc3 {
+                    height: 20%;
+                    width: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    align-items: flex-start;
+                }
+
+            .lowerBox4 {
+                height: 100%;
+                width: 23%;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: flex-start;
+            }
+
+                .boxDesc4 {
+                    height: 20%;
+                    width: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    align-items: flex-start;
+                }
+
+                .buttonLink4 {
+                    height: 20%;
+                    width: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-evenly;
+                    align-items: flex-start;
+                }
