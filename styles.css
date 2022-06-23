@@ -17,9 +17,10 @@
 }
 
 body {
-    height: 100vh;
-    width: 100vw;
+    height: 100%;
+    width: 100%;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
@@ -27,14 +28,37 @@ body {
 main {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
-    height: 100%;
+    height: 220vh;
     width: 63%;
 }
 
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+    width: 100%;
+    background-color: lightgray;
+}
+
+.for {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.for > h3 {
+    font-size: 24px;
+    font-weight: bold;
+}
+
     header {
-        height: 5%;
+        height: 70px;
         width: 100%;
         display: flex;
         flex-direction: row;
@@ -100,7 +124,17 @@ main {
                 }
 
     .mainbody {
-        height: 95%;
+        /* height: 31.66%; */
+        height: 1220px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .mainbody2 {
+        margin-top: 40px;
+        height: 1220px;
         width: 100%;
         display: flex;
         flex-direction: column;
@@ -203,6 +237,7 @@ main {
             flex-direction: row;
             justify-content: space-between;
             align-items: flex-start;
+            margin-bottom: 40px;
         }
 
             .lowerBox1 {
@@ -359,4 +394,54 @@ main {
                     flex-direction: column;
                     justify-content: space-evenly;
                     align-items: flex-start;
+                }
+
+
+    .rec2 {
+        height: 48%;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        background-image: url(./imgs/RE4ROs4.jpg);
+    }
+
+        .mainIntro2 {
+            height: 25%;
+            width: 35%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-left: 90px;
+        }
+
+            .introHeader2 {
+                height: 30%;
+                width: 100%;
+            }
+
+            .introParagraph2 {
+                height: 40%;
+                width: 100%;
+            }
+
+                .introHeader2 > h1 {
+                    color: white;
+                    font-size: 34px;
+                    font-weight: 600;
+                }
+                .introParagraph2 > p {
+                    color: white;
+                    font-size: 15px;
+                }
+                .leftButton2 > button {
+                    color: var(--black);
+                    font-size: 15px;
+                    font-weight: bold;
+                    background-color: white;
+                    height: 40px;
+                    width: 200px;
+                    padding: 10px;
                 }
